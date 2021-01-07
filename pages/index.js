@@ -1,23 +1,12 @@
-import Head from "next/head";
-export default function Page1(){
-    return (
-        <div>
-          <p>This is home page</p>
-          <img src="/static/kangaroo-c.png" />
-          <Head>
-            <title>page1</title>
-          </Head>
-          <Head>
-            <meta name="description" content="hello world" />
-          </Head>
-          <style jsx>
-            {`
-              p {
-                color: blue;
-                font-size: 18pt;
-              }
-            `}
-          </style>
-        </div>
-      );
-}
+import Link from 'next/link';
+
+const Index = () => (
+    <div>
+        <Link href="/about">
+            <a>About Page</a>
+        </Link>
+        <p>Hello Next.js</p>
+    </div>
+);
+
+export default Index;
