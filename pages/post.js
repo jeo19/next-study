@@ -7,9 +7,9 @@ const Content = withRouter((props) => (
         <p>This is the blog post content.</p>
     </div>
 ));
-const Page = (props) => {
+const Page = (props) => (
     <Layout>
         <Content />
-    </Layout>;
-};
+    </Layout>
+);
 export default Page;
